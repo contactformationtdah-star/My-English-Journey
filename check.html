@@ -1,0 +1,23 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Site check | Britannia English</title>
+<style>body{font:16px/1.5 system-ui,sans-serif;max-width:56rem;margin:1rem auto;padding:0 1rem}.ok{color:#1d6b3a}.no{color:#b3262e;font-weight:600}.in{color:#666}td,th{padding:.2rem .6rem;text-align:left;border-bottom:1px solid #ccc;word-break:break-all}#sum{font-weight:700}</style></head><body>
+<h1>Britannia English: site check</h1>
+<p>The listening page works with <code>listening.html</code> alone (it contains 24 built-in placeholders). This check shows which of your own optional files are online.</p>
+<p id="sum">Checking…</p><p>Site folder: <code id="base"></code></p><table id="t"><tr><th>File</th><th>Address tested</th><th>Result</th></tr></table>
+<script>
+(async()=>{
+const $=id=>document.getElementById(id),abs=u=>new URL(u,location.href).href;$('base').textContent=abs('./');
+if(location.protocol==='file:'){$('sum').textContent='Opened from your computer: use serve.py (see README.md) or the GitHub Pages address.';return}
+const F=[['Listening page','listening.html',1]];
+['b1','b2','c1'].forEach(l=>{for(let i=1;i<=8;i++)F.push([l.toUpperCase()+' lesson '+i,'data/listening/'+l+'/lesson-'+String(i).padStart(2,'0')+'.json',0])});
+let custom=0,bad=0,page=true;
+for(const[name,u,req]of F){let msg,cls;
+ try{const r=await fetch(u,{cache:'no-store'});
+  if(!r.ok){msg=req?'MISSING (HTTP '+r.status+')':'Not uploaded: built-in placeholder used';cls=req?'no':'in';if(req)page=false}
+  else if(!req){const j=await r.json();if(!j.topic)throw Error('topic missing');msg='Your file is online and used';cls='ok';custom++}
+  else{msg='OK';cls='ok'}}
+ catch(e){msg='Invalid content: '+e.message;cls='no';bad++}
+ const tr=$('t').insertRow();[name,abs(u),msg].forEach((x,i)=>{const c=tr.insertCell();c.textContent=x;if(i==2)c.className=cls})}
+$('sum').className=(!page||bad)?'no':'ok';
+$('sum').textContent=!page?'listening.html is not in this folder.':bad?bad+' of your lesson files contain a mistake (see the red lines).':'All good. '+custom+' of 24 lesson files are your own; the others use built-in placeholders.';
+})();
+</script></body></html>
