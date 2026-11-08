@@ -1,0 +1,18 @@
+{
+  "level": "b1",
+  "lesson": 6,
+  "lessonTitle": "Health and Wellbeing",
+  "topic": "A patient describes symptoms to a pharmacist and receives advice.",
+  "targetDuration": "about 50 seconds",
+  "objective": "Identify symptoms and advice.",
+  "context": "",
+  "media": "assets/audio/b1/lesson-06.mp3",
+  "questionTypes": [
+    "Gist (multiple choice)",
+    "Specific information (multiple choice)",
+    "True / false"
+  ],
+  "questionCount": 5,
+  "questions": [],
+  "transcript": ""
+}

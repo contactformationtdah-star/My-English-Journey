@@ -1,0 +1,18 @@
+{
+  "level": "b1",
+  "lesson": 3,
+  "lessonTitle": "Food, Eating Out and Hospitality",
+  "topic": "A customer orders a meal and asks about halal and vegetarian options.",
+  "targetDuration": "about 50 seconds",
+  "objective": "Understand an order and specific details such as prices and dietary needs.",
+  "context": "",
+  "media": "assets/audio/b1/lesson-03.mp3",
+  "questionTypes": [
+    "Gist (multiple choice)",
+    "Specific information (multiple choice)",
+    "True / false"
+  ],
+  "questionCount": 5,
+  "questions": [],
+  "transcript": ""
+}

@@ -1,0 +1,18 @@
+{
+  "level": "b1",
+  "lesson": 2,
+  "lessonTitle": "Experiences and Personal Interests",
+  "topic": "Two friends compare their hobbies and things they have done this year.",
+  "targetDuration": "about 50 seconds",
+  "objective": "Identify experiences and preferences in a short conversation.",
+  "context": "",
+  "media": "assets/audio/b1/lesson-02.mp3",
+  "questionTypes": [
+    "Gist (multiple choice)",
+    "Specific information (multiple choice)",
+    "True / false"
+  ],
+  "questionCount": 5,
+  "questions": [],
+  "transcript": ""
+}

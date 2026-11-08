@@ -1,0 +1,18 @@
+{
+  "level": "b1",
+  "lesson": 5,
+  "lessonTitle": "Living in the UK: Housing and Everyday Services",
+  "topic": "A student phones a letting agent about a room to rent.",
+  "targetDuration": "about 50 seconds",
+  "objective": "Understand rent, location and house rules in a phone call.",
+  "context": "",
+  "media": "assets/audio/b1/lesson-05.mp3",
+  "questionTypes": [
+    "Gist (multiple choice)",
+    "Specific information (multiple choice)",
+    "True / false"
+  ],
+  "questionCount": 5,
+  "questions": [],
+  "transcript": ""
+}

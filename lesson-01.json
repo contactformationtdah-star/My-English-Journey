@@ -1,0 +1,18 @@
+{
+  "level": "b1",
+  "lesson": 1,
+  "lessonTitle": "Introducing Ourselves and Everyday Life",
+  "topic": "Two people meet at a language centre and talk about their daily routines.",
+  "targetDuration": "about 50 seconds",
+  "objective": "Understand basic introductions and pick out routine details.",
+  "context": "",
+  "media": "assets/audio/b1/lesson-01.mp3",
+  "questionTypes": [
+    "Gist (multiple choice)",
+    "Specific information (multiple choice)",
+    "True / false"
+  ],
+  "questionCount": 5,
+  "questions": [],
+  "transcript": ""
+}
